@@ -1,6 +1,6 @@
 .coffeCard{
-    height: 280px;
-    width: 180px;
+    height: 380px;
+    width: 290px;
     display: flex;
     flex-direction: column;
 }

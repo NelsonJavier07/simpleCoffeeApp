@@ -29,7 +29,7 @@ export const CoffeGrid = () => {
                     from differents roast types an origins, expertly roasted in small
                     batches and shipped fresh weekly.
                 </p>
-                <section>
+                <section className='coffeBtn'>
                     <button className='btnProduct'>All Products</button>
                     <button className='btnAvailable'>Available Now</button>
                 </section>
