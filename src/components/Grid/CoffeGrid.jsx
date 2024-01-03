@@ -10,6 +10,7 @@ export const CoffeGrid = () => {
     const [coffes, setCoffes] = useState([]);
 
     const urlBase = 'https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json';
+    
     useEffect(()=>{
 
         axios.get(urlBase)
@@ -34,10 +35,10 @@ export const CoffeGrid = () => {
                     <button className='btnAvailable'>Available Now</button>
                 </section>
         </div>
-        <div className='coffeGrid'>
-            {
-                coffes.map((coffe) => {return <CoffeCard key={coffe.id} props={coffe.props} />})
-            }
-        </div>
+            <div className='coffeGrid'>
+                {
+                    coffes.map((coffe) => {return <CoffeCard key={coffe.id} coffe={coffe} /> })
+                }
+            </div>
         </div>
 )}
