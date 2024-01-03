@@ -1,8 +1,7 @@
 import '../Card/CoffeCard.css';
 
-export const CoffeCard = (coffe) => {
+export const CoffeCard = ({coffe}) => {
 
-    console.log(coffe);
     return(
         <div className='coffeCard'>
             <img src={coffe.image} className='coffeCard__img' alt={coffe.name} />
