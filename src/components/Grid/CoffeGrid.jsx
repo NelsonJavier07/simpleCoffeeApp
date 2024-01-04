@@ -23,18 +23,21 @@ export const CoffeGrid = () => {
     return(
         <div className='background'>
             <img src="src\assets\bg-cafe.jpg" className="background__Img" alt="Fondo Coffe" />
-        <div className="coffeGridBack">
-                <h1 className="">Our Collection</h1>
-                <p className="coffeText">
-                    Introducing our Coffe Collection, a selection of unique coffees
-                    from differents roast types an origins, expertly roasted in small
-                    batches and shipped fresh weekly.
-                </p>
+            <div className="coffeGridBack">
+                <img src="../../src/assets/vector.svg" className='decoration' alt="Decoración" />
+                <section className='coffeeSection'>
+                    <h1 className="coffeTitle">Our Collection</h1>
+                    <p className="coffeText">
+                        Introducing our Coffe Collection, a selection of unique coffees
+                        from differents roast types an origins, expertly roasted in small
+                        batches and shipped fresh weekly.
+                    </p>
+                </section>
                 <section className='coffeBtn'>
                     <button className='btnProduct'>All Products</button>
                     <button className='btnAvailable'>Available Now</button>
                 </section>
-        </div>
+            </div>
             <div className='coffeGrid'>
                 {
                     coffes.map((coffe) => {return <CoffeCard key={coffe.id} coffe={coffe} /> })
