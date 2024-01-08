@@ -28,3 +28,16 @@
     background-color: #BDE3CC;
     color: black;
 }
+
+span {
+    margin-top: 13.5px;
+}
+
+
+/* .coffeStar{
+    margin-top: 7px;
+} */
+.coffeRating{
+    display: flex;
+    gap: 8px;
+}
