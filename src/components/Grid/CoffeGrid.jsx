@@ -5,22 +5,33 @@ import '../Grid/CoffeGrid.css'
 
 
 
+
+
+
 export const CoffeGrid = () => {
 
     const [coffes, setCoffes] = useState([]);
+    const [availables, setAvailables] = useState(true);
 
     const urlBase = 'https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json';
-    
-    useEffect(()=>{
 
+    useEffect(()=>{
         axios.get(urlBase)
         .then((res) => {
-            setCoffes(res.data);
-            console.log(res.data);})
+            setCoffes(res.data)})
         .catch((err) => console.log(err))
         },[])
 
-    return(
+
+    const handleShowAvailablesCoffee = () =>{
+        setAvailables(false);
+    }
+
+    const handleShowAllCoffee = () =>{
+        setAvailables(true);
+    }
+
+    return (
         <div className='background'>
             <img src="src\assets\bg-cafe.jpg" className="background__Img" alt="Fondo Coffe" />
             <div className="coffeGridBack">
@@ -34,14 +45,17 @@ export const CoffeGrid = () => {
                     </p>
                 </section>
                 <section className='coffeBtn'>
-                    <button className='btnProduct'>All Products</button>
-                    <button className='btnAvailable'>Available Now</button>
+                    <button className='btnProduct' onClick={handleShowAllCoffee} >All Products</button>
+                    <button className='btnAvailable' onClick={handleShowAvailablesCoffee} >Available Now</button>
                 </section>
             </div>
             <div className='coffeGrid'>
                 {
-                    coffes.map((coffe) => {return <CoffeCard key={coffe.id} coffe={coffe} /> })
+                    availables ? coffes.map((coffe) =>{return <CoffeCard key={coffe.id} coffe={coffe} />}) 
+                    : 
+                    coffes.filter((coffe) =>{return coffe.available === true}).map((coffe) => { return <CoffeCard key={coffe.id} coffe={coffe} />})
                 }
             </div>
         </div>
-)}
+    )}
+
