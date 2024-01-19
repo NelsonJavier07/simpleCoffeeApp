@@ -25,11 +25,13 @@ export const CoffeGrid = () => {
 
     const handleShowAvailablesCoffee = () =>{
         setAvailables(false);
-    }
-
+}
     const handleShowAllCoffee = () =>{
         setAvailables(true);
     }
+
+    const activeColor = () => { return availables ? 'btnActive' : 'btnInactive'};
+    const activeColorB = () => { return !availables ? 'btnActive' : 'btnInactive'};
 
     return (
         <div className='background'>
@@ -45,8 +47,8 @@ export const CoffeGrid = () => {
                     </p>
                 </section>
                 <section className='coffeBtn'>
-                    <button className='btnProduct' onClick={handleShowAllCoffee} >All Products</button>
-                    <button className='btnAvailable' onClick={handleShowAvailablesCoffee} >Available Now</button>
+                    <button className={`btnProduct ${activeColor()}`} onClick={handleShowAllCoffee} >All Products</button>
+                    <button className={`btnAvailable ${activeColorB()}`} onClick={handleShowAvailablesCoffee} >Available Now</button>
                 </section>
             </div>
             <div className='coffeGrid'>

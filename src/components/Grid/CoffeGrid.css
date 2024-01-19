@@ -49,17 +49,29 @@
 }
 
 .btnProduct{
+    background-color: #1C1D1F;
     margin-right: 5px;
     padding: 7px;
     border-radius: 8px;
     cursor: pointer;
 }
+
 .btnAvailable{
+    background-color: #1C1D1F;
     margin-left: 5px;
     padding: 7px;
     border-radius: 8px;
     cursor: pointer;
 }
+.btnInactive{
+background-color: #1C1D1F;
+}
+
+.btnActive{
+    background-color: #6B6B6B;
+}
+
+
 .coffeGrid{
     display: flex;
     justify-content: center;
