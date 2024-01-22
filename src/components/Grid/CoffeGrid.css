@@ -80,3 +80,61 @@ background-color: #1C1D1F;
     gap: 30px;
     margin-top: 125px;
 }
+
+@media screen and (max-width: 480px){
+    .coffeGridBack{
+        width: 45%;
+        height: 2760px;
+    }
+
+    .decoration {
+        margin-bottom: 60px;
+        padding-left: 95px;
+    }
+
+    .coffeBtn{
+        margin: 25px;
+        padding-bottom: 25px;
+        padding-top: 48px;
+    }
+
+    .coffeGrid{
+        margin-top: 205px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .coffeGridBack{
+        width: 65%;
+        height: 2610px;
+    }
+
+    .coffeBtn{
+        margin: 25px;
+        padding-bottom: 25px;
+    }
+    .coffeGrid{
+        padding-top: 25px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .coffeBtn{
+        margin: 25px;
+        padding-bottom: 25px;
+    }
+    .coffeGrid{
+        display: block;
+        padding-top: 45px;
+    }
+
+    .coffeGridBack {
+        width: 55%;
+        height: 2570px;
+    }
+}
+
+
+
+/* 0   480     960     1328  medidas de breakpoint*/

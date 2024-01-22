@@ -3,11 +3,6 @@ import { CoffeCard } from '../Card/CoffeCard'
 import { useEffect, useState } from 'react';
 import '../Grid/CoffeGrid.css'
 
-
-
-
-
-
 export const CoffeGrid = () => {
 
     const [coffes, setCoffes] = useState([]);
