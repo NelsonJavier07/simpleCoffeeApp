@@ -30,7 +30,7 @@ export const CoffeGrid = () => {
 
     return (
         <div className='background'>
-            <img src="\public\bg-cafe.jpg" className="background__Img" alt="Fondo Coffe" />
+            <img src="/public/bg-cafe.jpg" className="background__Img" alt="Fondo Coffe" />
             <div className="coffeGridBack">
                 <img src="../../src/assets/vector.svg" className='decoration' alt="Decoración" />
                 <section className='coffeeSection'>
