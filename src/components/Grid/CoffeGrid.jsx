@@ -28,9 +28,11 @@ export const CoffeGrid = () => {
     const activeColor = () => { return availables ? 'btnActive' : 'btnInactive'};
     const activeColorB = () => { return !availables ? 'btnActive' : 'btnInactive'};
 
+    const imgCoffee = import.meta.env.VITE_URL_IMAGEN_COFFEE
+    console.log(imgCoffee);
     return (
         <div className='background'>
-            <img src="public/bg-cafe.jpg" className="background__Img" alt="Fondo Coffe" />
+            <img src={imgCoffee} className="background__Img" alt="Fondo Coffe" />
             <div className="coffeGridBack">
                 <img src="../../src/assets/vector.svg" className='decoration' alt="Decoración" />
                 <section className='coffeeSection'>
