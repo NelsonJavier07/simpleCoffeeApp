@@ -5,8 +5,8 @@ import { useState } from 'react';
 export const CoffeCard = ({coffe}) => {
 
     const [ star, setStar ] = useState(false)
-    const starLine = <img src="../../src/assets/Star.svg" className='coffeStar' alt="star" />;
-    const starFill = <img src="../../src/assets/Star_fill.svg" className='coffeStar_fill' alt="star fill" />;
+    const starLine = <img src="public/images/Star.svg" className='coffeStar' alt="star" />;
+    const starFill = <img src="public/images/Star_fill.svg" className='coffeStar_fill' alt="star fill" />;
 
 
 
