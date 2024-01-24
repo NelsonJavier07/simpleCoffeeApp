@@ -29,7 +29,7 @@ export const CoffeGrid = () => {
     const activeColorB = () => { return !availables ? 'btnActive' : 'btnInactive'};
 
     const imgCoffee = import.meta.env.VITE_URL_IMAGEN_COFFEE
-    console.log(imgCoffee);
+    
     return (
         <div className='background'>
             <img src={imgCoffee} className="background__Img" alt="Fondo Coffe" />
