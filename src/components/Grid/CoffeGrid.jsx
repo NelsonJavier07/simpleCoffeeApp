@@ -28,9 +28,6 @@ export const CoffeGrid = () => {
     const activeColor = () => { return availables ? 'btnActive' : 'btnInactive'};
     const activeColorB = () => { return !availables ? 'btnActive' : 'btnInactive'};
 
-    // const imgCoffee = import.meta.env.VITE_URL_IMAGEN_COFFEE
-    // const imgDecoration = import.meta.env.VITE_URL_IMAGEN_COFFEE_DECORATION
-
     const imgCoffee = "/bg-cafe.jpg"
     const imgDecoration = "images/vector.svg"
 
