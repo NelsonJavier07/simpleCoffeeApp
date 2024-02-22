@@ -31,7 +31,7 @@ export const CoffeGrid = () => {
     // const imgCoffee = import.meta.env.VITE_URL_IMAGEN_COFFEE
     // const imgDecoration = import.meta.env.VITE_URL_IMAGEN_COFFEE_DECORATION
 
-    const imgCoffee = "public/bg-cafe.jpg"
+    const imgCoffee = "coffe_list/public/bg-cafe.jpg"
     const imgDecoration = "images/vector.svg"
 
     return (
